@@ -24,6 +24,18 @@ around CAPTCHA checks:
 
 <h2>File Downloads</h2>
 
+<p>Downloaing file scenario actully depends on factors like-
+(a) How many files you are planning to download
+(b) How big are these files
+(c) Do you have disc space to cater this without manual intervention going forward
+(d) <b>What will you do with these downloaded files
+Many times we just download file and do nothing with it as test case says that just check if
+file is being downloaded. Now, think do you really need to download file to perform this check. All you should actully do it to
+check that when you click a link, are you getting valid response from server. So this way you can check if download link is working or not
+It's not like you can not download files. but we suggest to avoid it due to following reasons-
+(1) Your test becomes machine (OS) dependent
+(2) You need to handle download action as per the browser, so you might need to write customized code for each.
+(3) You might lead to incorrect results in case of multithreaded mode.
 
 <h2>HTTP Response Codes</h2>
 
